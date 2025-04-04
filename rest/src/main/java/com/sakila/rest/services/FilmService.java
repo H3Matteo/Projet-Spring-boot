@@ -1,4 +1,8 @@
 package com.sakila.rest.services;
 
-public interface FilmService {
+import com.sakila.rest.entities.Film;
+
+public interface FilmService extends IService<Film, Integer> {
+
+    Film FindFilmByName(String name);
 }
